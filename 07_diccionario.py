@@ -47,4 +47,21 @@ print("Apellido" in my_dict)
 print(my_dict.items()) #Función items: un listado con cada uno de los items
 print(my_dict.keys()) #Función keys(claves): listado de las keys: nombre, apellido... 
 print(my_dict.values()) #Función values: lista de todos los valores de las claves
-print(my_dict.fromkeys())
+
+
+my_new_dict = dict.fromkeys(my_dict)
+print(my_new_dict)  #Funcion fromkeys: creamos un dic sin valores
+
+my_new_dict = dict.fromkeys(my_dict, ("Brais", "Moure"))
+#print(my_new_dict) #Va a meter en todas las claves el valor que estamos pasando
+
+#Puedo convertir esto en lo que quiera:
+
+my_values = my_new_dict.values()
+print(type(my_values)) #Esto es un diccionario de valores
+print(my_new_dict.values())
+
+print(list(my_new_dict.values()))
+print(tuple(my_new_dict))
+print(set(my_new_dict))
+
