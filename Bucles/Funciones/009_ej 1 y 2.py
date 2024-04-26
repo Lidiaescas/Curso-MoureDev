@@ -38,4 +38,5 @@ def value(number, IVA = 0.21):
 suma = value(800)
 print(suma)
 
+#Otra forma de hacerlo
 print(value(800, 0.30))
