@@ -4,7 +4,7 @@ divisa no está en el diccionario."""
 
 #CHAPUZA PECU
 
-diccionario = {"Euro" : "€", 'Dollar':'$', 'Yen':'¥'}
+"""diccionario = {"Euro" : "€", 'Dollar':'$', 'Yen':'¥'}
 
 divisa = input("Qué divisa quieres: ")
 
@@ -17,4 +17,17 @@ for clave, valor in diccionario.items():
         break
 
 if switch == 0:
+    print("error")"""
+
+#Bien hecho
+
+diccionario = {"Euro": "€", "Dolar": "$", "Yen": "¥"}
+divisa = input("¿Qué divisa quieres?: ")
+
+
+for clave, valor in diccionario.items():
+    if divisa == clave:
+        print(valor)
+        break
+else:
     print("error")
