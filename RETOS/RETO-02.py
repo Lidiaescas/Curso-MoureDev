@@ -5,16 +5,25 @@
  * - Los polígonos soportados serán Triángulo, Cuadrado y Rectángulo.
  * - Imprime el cálculo del área de un polígono de cada tipo."""
 
-def area(base, altura, lado):
-    area_triangulo = (base * altura)/2
-    area_cuadrado = (lado * 4)**2
-    area_rectangulo = base * altura
+def area(poligono, *values):
+    
 
-    if area_triangulo is True:
+    if poligono == area_triangulo:
+        base, altura = values 
+        area_triangulo = (base * altura)/2
         print(area_triangulo)
-    elif area_triangulo is True:
-        print (area_cuadrado)
-    elif area_rectangulo is True:
+    elif area_cuadrado:
+         lado = values
+         area_cuadrado = lado * lado
+         print(area_cuadrado)
+    elif area_rectangulo:
+        base, altura = values
+        area_rectangulo = base * altura
         print(area_cuadrado)
     else:
-        print("FALSE")
+        print("No hay polígono")
+
+    area(area_triangulo,)
+    area(area_cuadrado)
+    area(area_rectangulo)
+
