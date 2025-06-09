@@ -70,3 +70,5 @@ def imprime_textos(*texts):
 
 imprime_textos("Hola", "Python", "Mouredev")#Puedo quitarle o ponerle cuantos parámetros quiera
 imprime_textos("Hola")
+
+#sebitas feo cara culo
